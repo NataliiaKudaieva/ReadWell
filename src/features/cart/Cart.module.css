@@ -1,0 +1,10 @@
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cartTitle {
+  font-size: 28px;
+}
