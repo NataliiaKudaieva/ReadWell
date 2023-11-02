@@ -30,7 +30,7 @@ const iconSearchStyles = {
 
 export default function InputSearch() {
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position: "relative", marginLeft: "auto" }}>
       <Input
         inputProps={{ type: "text" }}
         sx={inputStyles}
