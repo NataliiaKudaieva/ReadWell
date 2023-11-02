@@ -1,7 +1,7 @@
 import Book from "./Book";
 import { getBooks } from "../../services/api/api";
-import { Box } from "@mui/material";
 import { useEffect, useState } from "react";
+import styles from "./Catalog.module.css";
 
 export default function Catalog() {
   const [books, setBooks] = useState([]);
@@ -20,20 +20,12 @@ export default function Catalog() {
   }, []);
 
   return (
-    <Box
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        height: "100%",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <div className={styles.catalog}>
       {books.map((book) => (
         <Book book={book} key={book.id} />
       ))}
 
       {/* {isLoading && <CircularProgress />} */}
-    </Box>
+    </div>
   );
 }

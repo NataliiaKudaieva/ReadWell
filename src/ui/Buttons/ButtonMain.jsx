@@ -8,7 +8,7 @@ export default function ButtonMain({ text }) {
       variant="contained"
       sx={{
         mr: "2",
-        width: "200px",
+        maxWidth: "200px",
         bgcolor: "primary.main",
         display: "block",
         padding: "12px 17px",
@@ -19,10 +19,7 @@ export default function ButtonMain({ text }) {
         lineHeight: 1,
         transition: "all ease 0.5s",
         ":hover": {
-          bgcolor: "white",
-          color: "primary.main",
-
-          border: "1px solid ",
+          bgcolor: "secondary.light",
         },
       }}
     >
